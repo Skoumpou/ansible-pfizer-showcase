@@ -12,7 +12,7 @@
     - name: Ping targets
       ping:
 
-    - name: Sleep for 3 seconds
+    - name: Sleep for three seconds
       shell: "sleep 3"
 
     - name: Uptime
