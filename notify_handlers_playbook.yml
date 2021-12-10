@@ -42,7 +42,7 @@
           block: |
             Files were copied last time at {{ ansible_date_time.iso8601 }} from user {{ user }}
 
-   - name: Debian files copied
+      - name: Debian files copied
         blockinfile:
           path: debian_log.txt
           marker: ""
