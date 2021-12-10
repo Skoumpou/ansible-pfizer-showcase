@@ -36,7 +36,7 @@
     handlers:
       - name: RedHat files copied
         blockinfile:
-          path: redhat_log.txt
+          path: /etc/ansible/redhat_log.txt
           marker: ""
           insertafter: EOF
           block: |
@@ -44,7 +44,7 @@
 
       - name: Debian files copied
         blockinfile:
-          path: debian_log.txt
+          path: /etc/ansible/debian_log.txt
           marker: ""
           insertafter: EOF
           block: |
