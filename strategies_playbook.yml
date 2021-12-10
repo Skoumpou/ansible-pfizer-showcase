@@ -4,7 +4,8 @@
   hosts: linux_nodes
   become: yes
   gather_facts: linux_nodes
-
+##  strategy: free
+  serial: 1
 
   tasks:
 
