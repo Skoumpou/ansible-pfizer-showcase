@@ -11,8 +11,8 @@
           src: "{{ item.src }}"
           dest: "{{ item.dest }}"
         loop:
-          - { src: 'redhat-files/rfile1.txt', dest: '/etch/myfolder'}
-          - { src: 'redhat-files/rfile2.txt', dest: '/etch/myfolder'}
+          - { src: 'redhat-files/rfile1.txt', dest: '/etch/myfolder/'}
+          - { src: 'redhat-files/rfile2.txt', dest: '/etch/myfolder/'}
         when: ansible_os_family == 'RedHat'
 
       
@@ -21,6 +21,6 @@
           src: "{{ item.src }}"
           dest: "{{ item.dest }}"
         loop:
-          - { src: 'debian-files/dfile1.txt', dest: '/etch/myfolder'}
-          - { src: 'debian-files/dfile2.txt', dest: '/etch/myfolder'}
+          - { src: 'debian-files/dfile1.txt', dest: '/etch/myfolder/'}
+          - { src: 'debian-files/dfile2.txt', dest: '/etch/myfolder/'}
         when: ansible_os_family == 'Debian'
